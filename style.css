@@ -1,0 +1,643 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #080808;
+    color: #fff;
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/Capture\ 2.JPG);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+
+.LOGO {
+    width: 200px; /* Adjust the width to make the logo smaller */
+    height: auto; /* Maintain aspect ratio */
+    position: absolute;
+    top: 40px; /* Adjust the distance from the top */
+    left: 20px; /* Adjust the distance from the left */
+}
+
+.container{
+    padding: 10px 25%;
+    top: 0;
+    right: 0;
+    
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin-right: 40px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.header-text{
+    margin-top: 30%;
+    font-size: 60px;
+}
+.header-text h1{
+    margin-top: 20px;
+    font-size: 30px;
+    
+}
+.header-text span{
+    color: #ff004f;
+
+}
+
+/*-------------------About------------*/
+#About{
+    padding: 80px 0;
+    color: #ababab;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between; /* Ensure the image and text are spaced apart */
+    align-items: center; /* Vertically align the image and text */
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.About-col-1 {
+    flex: 1; /* Adjust the size of the image container */
+    max-width: 40%; /* Ensure the image container takes up no more than 40% of the width */
+    flex-basis: 35%;
+}
+
+.About-col-1 img {
+    width: 200%; /* Set the image to take up the full width of its container */
+    max-width: 400px; /* Limit the image size to 300px */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 15px;
+}
+
+.About-col-2 {
+    flex: 1; /* Adjust the size of the text container */
+    max-width: 50%; /* Ensure the text container takes up no more than 50% of the width */
+    padding-left: 50px; /* Add some space between the image and the text */
+    padding-top: 10px;
+    flex-basis: 60%;
+}
+
+h1 {
+    font-size: 30px; /* Adjust font size as needed */
+    margin-bottom: 20px;
+}  
+
+.sub-title{
+    font-size: 50px;
+    font-weight: 600;
+    color: #fff;
+}
+.sub-title p {
+    font-size: 16px; /* Adjust this value to make the text smaller */
+    margin-top: 10px; /* Adjust this value to move the text up or down */
+    max-width: 400px; /* Set a max width to control line breaks */
+    line-height: 1.5;
+    font-size: 30px;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: #b54769;
+    font-size: 14px;
+}
+
+.language-container {
+    width: 300px;
+    margin: 10px 0;
+}
+
+.language-container span {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background-color: #b54769;
+    border-radius: 10px;
+}
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+
+/*----------------compétences--------------*/
+#compétences{
+    padding: 30px 0;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.services-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-right: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+.services-list div i{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.services-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.services-list div:hover{
+    background: #b54769;
+    transform: translateY(-10px);
+}
+/*-------------------certification------------*/
+#certification{
+    padding: 50px 0;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), #b54769);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.layer a{
+    margin-top: 20px;
+    color: #b54769;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    color: #fff;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: #ff004f;
+}
+/*-------------------contact------------*/
+#contact .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the start of the container */
+}
+
+.contact-left {
+    flex-basis: 35%;
+}
+.contact-right {
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.contact-left p{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+.contact-left p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 20px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+}
+.social-icons a:hover{
+    color: #ff004f;
+    transform: translate(-5px);
+}
+.btn.btn2{
+    display: inline-block;
+    background: #ff004f;
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+/*-------------------css for small screens------------*/
+nav .fas{
+    display: none;
+}
+@media only screen and (max-width: 600px) {
+    /* Adjust header background */
+    #header {
+        height: 125vh;
+        background-image: url(images/DOUAA-nobg.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    /* Make logo smaller and centered */
+    .LOGO {
+        width: 150px; /* Smaller logo */
+        top: 20px; 
+        left: 50%; 
+        transform: translateX(-50%); /* Center the logo */
+    }
+
+    /* Adjust header text for mobile */
+    .header-text {
+        margin-top: 200%; /* Move the text up */
+        font-size: 24px; /* Smaller text */
+    }
+
+    .header-text h1 {
+        font-size: 30px; /* Smaller h1 */
+    }
+    .header-text p {
+        font-size: 25px; /* Adjust paragraph text size for mobile */
+    }
+    nav .fas {
+        display: block;
+        font-size: 25px;
+        position: absolute;
+        top: 25px;
+        right: 25px; /* Move the icon to the right side */
+        cursor: pointer;
+    }
+
+
+    /* Adjust navigation for mobile */
+    nav ul {
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li {
+        display: block; /* Stack nav items vertically */
+        margin: 25px;
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+      /*---------------- compétences --------------*/
+      #compétences {
+        padding: 20px 0; /* Reduce padding */
+    }
+
+    .services-list {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust minimum width */
+        grid-gap: 20px; /* Reduce gap */
+        margin-top: 30px; /* Adjust top margin */
+    }
+
+    .services-list div {
+        padding: 20px; /* Reduce padding within service boxes */
+        font-size: 12px; /* Reduce font size */
+    }
+
+    .services-list div i {
+        font-size: 30px; /* Reduce icon size */
+        margin-bottom: 20px; /* Adjust bottom margin */
+    }
+
+    .services-list div h2 {
+        font-size: 24px; /* Adjust header font size */
+        margin-bottom: 10px; /* Adjust bottom margin */
+    }
+
+    .services-list div a {
+        font-size: 11px; /* Adjust link font size */
+        margin-top: 15px; /* Adjust top margin */
+    }
+
+     /*---------------- certification --------------*/
+     #certification {
+        padding: 30px 0; /* Adjust padding */
+    }
+
+    .work-list {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust minimum width */
+        grid-gap: 20px; /* Reduce gap */
+    }
+
+    .work {
+        border-radius: 8px; /* Slightly reduce border radius */
+    }
+
+    .work img {
+        transition: transform 0.3s; /* Shorten transform duration */
+    }
+
+    .layer {
+        font-size: 12px; /* Reduce font size in overlay */
+        padding: 0 20px; /* Adjust padding within overlay */
+    }
+
+    .layer h3 {
+        margin-bottom: 15px; /* Adjust margin */
+    }
+
+    .layer a {
+        font-size: 16px; /* Reduce icon link font size */
+        line-height: 50px; /* Adjust line height */
+        width: 50px; /* Adjust icon size */
+        height: 50px; /* Adjust icon size */
+    }
+
+    /* Button adjustments */
+    .btn {
+        padding: 10px 30px; /* Adjust button padding */
+        font-size: 14px; /* Reduce font size */
+    }
+
+
+    /* Contact section adjustments */
+       /* Contact section adjustments */
+       #contact .container {
+        flex-direction: column; /* Stack the contact-left and contact-right */
+        padding: 20px;
+    }
+
+    .contact-left, .contact-right {
+        flex-basis: 100%; /* Take full width */
+    }
+
+    .contact-left p {
+        margin-top: 15px;
+    }
+
+    /* Additional adjustments for smaller screens */
+    .contact-left, .contact-right {
+        font-size: 14px; /* Reduce text size */
+    }
+
+    .contact-left input, 
+    .contact-left textarea, 
+    .contact-right button {
+        width: 100%; /* Full width of container */
+        font-size: 14px; /* Reduce input and button font size */
+        padding: 8px; /* Smaller padding */
+    }
+
+    .contact-right button {
+        padding: 10px 15px; /* Adjust button padding */
+    }
+
+     /*------------------- About --------------*/
+     #About {
+        padding: 40px 0; /* Reduce padding */
+    }
+
+    .row {
+        flex-direction: column; /* Stack image and text vertically */
+        align-items: center; /* Center-align items on smaller screens */
+    }
+
+    .About-col-1 {
+        max-width: 80%; /* Allow the image container to take more space */
+        flex-basis: 100%; /* Full width on smaller screens */
+        margin-bottom: 20px; /* Add space between image and text */
+    }
+
+    .About-col-1 img {
+        width: 100%; /* Scale image to fit the container */
+        max-width: 300px; /* Limit image size */
+    }
+
+    .About-col-2 {
+        max-width: 90%; /* Allow text container to take more space */
+        flex-basis: 100%; /* Full width on smaller screens */
+        padding-left: 0; /* Remove left padding */
+        text-align: center; /* Center-align text */
+    }
+
+    h1 {
+        font-size: 24px; /* Reduce font size */
+        margin-bottom: 15px;
+    }
+
+    .sub-title {
+        font-size: 24px; /* Adjust title font size */
+        line-height: 1.2;
+        margin-bottom: 10px;
+    }
+
+    .sub-title p {
+        font-size: 14px; /* Reduce text font size */
+        max-width: 100%; /* Remove width restriction for smoother wrapping */
+    }
+
+    .tab-titles {
+        flex-direction: column; /* Stack tabs vertically */
+        align-items: center;
+        margin: 15px 0;
+    }
+
+    .tab-links {
+        font-size: 16px; /* Adjust tab font size */
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 10px; /* Add vertical spacing */
+    }
+
+    .tab-links::after {
+        width: 50%; /* Adjust underline width for mobile */
+    }
+
+    .language-container {
+        width: 100%; /* Full width on smaller screens */
+        text-align: center; /* Center-align */
+    }
+
+    .progress-bar {
+        width: 80%; /* Adjust bar width to fit screen */
+        margin: 0 auto; /* Center progress bar */
+    }
+
+    .btn {
+        padding: 10px 30px; /* Adjust button padding */
+        font-size: 14px; /* Reduce font size */
+    }
+}

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/LOGO.png" class="LOGO">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#compétences">Competences</a></li>
+                <li><a href="#certification">Certification</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Hello, I am <span>DOUAA SOBHI</span></p>
+            <h1>E-logisticienne</h1>
+        </div>
+    </div>
+</div>
+<!-------------------About------------>
+<div id="About">
+    <div class="container">
+        <div class="row">
+            <div class="About-col-1">
+                <img src="images/DOUAA.jpg">
+            </div>
+            <div class="About-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Bonjour, je suis Sobhi Douaa,Au cours de ma formation et de mes expériences, j'ai acquis des compétences transversales qui m'ont permis de maîtriser les aspects de la Supply Chain et d'optimiser ces connaissances avec des outils informatiques.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    <p class="tab-links"onclick="opentab('Language')">Language</p>
+                </div>
+                <div class="tab-contents active-tab" id="Experience">
+                    <ul>
+                        <li><span>ITEX - CASABLANCA-2021</span><br>Assurer le bon fonctionnement de l’équipement.</li>
+                        <li><span>SAIRAM - CASABLANCA-2022</span><br>Analyser l’organisation, l’environnement et la législation d’une entreprise</li>
+                        <li><span>COLAINORD - Tetouan- PFE-2023</span><br>Digitalisation de la maintenance et indicateur de performance maintenance</li>
+                        <li><span>ROYAL AIR MAROC - CASABLANCA-PFA-2024</span><br>Conception d’un tableau de bord.</li>
+                        <li><span>KICHOIX - CASABLANCA-Alternance</span><br>Développement d’une application pour garantir la fluidité de la chaine logistique.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>Bajja - Benahmed - 2020</span><br>Baccalauréat scientifique BIOF: Physique/chimie.</li>
+                        <li><span>ESITH - CASABLANCA-2020/2023</span><br>Licence professionnelle en Gestion de production en textile</li>
+                        <li><span>ESITH - CASABLANCA-2023/2025</span><br>Master spécialisé en E-Logistique</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Language">
+                    <ul>
+                        <li>
+                            <span>Arabic - Advanced</span><br>
+                            <div class="language-container">
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 100%;"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <span>French - Advanced</span><br>
+                            <div class="language-container">
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 75%;"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <span>English - Advanced</span><br>
+                            <div class="language-container">
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <span>Spanish - Beginner</span><br>
+                            <div class="language-container">
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 40%;"></div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-------------------compétences------------>
+<div id="compétences">
+    <div class="container">
+        <h1 class="sub-title">Mes compétences</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Programmation et Systèmes d'Information</h2>
+                <p>Développement et gestion de solutions informatiques avec des langages comme Python, HTML, CSS, PHP, ainsi que des outils tels que Django, SQL, Oracle, et Odoo.</p>
+                <a href="#">Plus</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-microsoft"></i>
+                <h2>Microsoft Office</h2>
+                <p>Maîtrise des outils bureautiques (Word, PowerBI, Excel, PowerPoint...) pour la gestion de documents, de données et de présentations.</p>
+                <a href="#">Plus</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-unity"></i>
+                <h2>Photoshop / Blender</h2>
+                <p>Création et retouche d’images, ainsi que modélisation et animation 3D pour des projets graphiques et visuels.</p>
+                <a href="#">Plus</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------------certification------------>
+<div id="certification">
+    <div class="container">
+        <h1 class="sub-title">Mes certifications</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/IBM.JPG">
+                <div class="layer">
+                    <h3>IBM</h3>
+                    <P>Python for Data Science, AI & Development Nov 13, 2023</P>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/oracle.JPG">
+                <div class="layer">
+                    <h3>ORACLE</h3>
+                    <P>Database Programming with SQL June 11, 2024</P>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/pythonbasic umich.JPG">
+                <div class="layer">
+                    <h3>UNIVERSITY OF MICHIGAN</h3>
+                    <P>Python Basics May 6 , 2023</P>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/supply chain.JPG">
+                <div class="layer">
+                    <h3>RUTGERS UNIVERSITY</h3>
+                    <P>Supply Chain Analytics Essentials Feb 4, 2024</P>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-------------------contact------------>
+<div id="contact">
+    <div class="container">
+        <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>sobhidouaapro@gmail.com</p>
+            <p><i class="fa-solid fa-square-phone"></i> 0693568498</p>
+            <div class="social-icons">
+                <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="images/CV DOUAA 2025.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right"></div>
+        <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+        </form>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Douaa Sobhi 2024</p>
+    </div>
+</div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        for (var tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (var tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        document.getElementById(tabname).classList.add("active-tab");
+        event.currentTarget.classList.add("active-link");
+    }
+
+</script>
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/library/d/1SYyrLGqaOu7JUV2LvIkSIdCFatHUX--q1JI_-5tRvnnvqxyj4ZAOtJJF/1'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
